@@ -1,0 +1,40 @@
+<!--
+Copyright 2020 Allanic.me ISC License License
+For the full copyright and license information, please view the LICENSE
+file that was distributed with this source code.
+Created by Maxime Allanic <maxime@allanic.me> at 25/04/2020
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Photon</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./photon.min.css">
+
+    <!-- Javascript -->
+    <script>window.$ = window.jQuery = require('jquery');</script>
+    <script src="./view.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="window">
+
+      <!-- .toolbar-header sits at the top of your app -->
+      <header class="toolbar toolbar-header" style="-webkit-app-region: drag">
+        <h1 class="title">Google Assistant</h1>
+      </header>
+
+      <!-- Your app's content goes inside .window-content -->
+      <div class="window-content content">
+
+        <form>
+            <div class="form-group">
+              <label>Command to launch Google Assistant</label>
+              <input id="command" type="text" class="form-control" placeholder="Command">
+            </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
