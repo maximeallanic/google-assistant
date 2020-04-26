@@ -11,6 +11,25 @@
 - Start at login automatically
 - Dark/Light Theme
 
+## Development
+
+Google Assistant for Mac is based on Electron
+And is build with Electron Builder.
+
+You'll need an OAuth Credential from the [Google Developer Console](https://console.developers.google.com):
+- Create a new project in the Google Developer Console
+- Enable the Google Assistant API for that project
+- Generate an OAuth credential
+    - Select the application type of `Other UI`
+    - State that you will be using `User Data`
+    - Download the JSON file
+    - Rename the file to `google_oauth.json`
+    - Place it in your project at `google_oauth.json`
+
+To start development:
+- Install npm dependency: `npm install --mpg123-backend=openal`
+- Start Electron package: `electron .`
+
 ## Thanks
 
 - [endoplasmic](https://github.com/endoplasmic/google-assistant) for SDK Google Assistant
