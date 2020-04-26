@@ -13,7 +13,7 @@ const rootDirectory = require('./lib/root-directory');
 const AutoLaunch = require('auto-launch');
 const { autoUpdater } = require("electron-updater")
 
-$parameters.$setDefault('debug', true);
+$parameters.$setDefault('debug', process.env.NODE_ENV === 'development');
 
 /*if (!$parameters.debug)
     app.dock.hide();*/

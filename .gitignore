@@ -3,3 +3,4 @@ google_oauth.json
 dist
 .sass-cache
 **/.DS_Store
+publish.sh

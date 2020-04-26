@@ -9,6 +9,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "publish": "electron-builder --publish onTag",
     "release": "build"
   },
   "author": "Maxime Allanic <maxime@allanic.me> (https://allanic.me)",
@@ -44,13 +45,17 @@
       "./build/icon/**",
       "./binary/**"
     ],
+    "publish": [
+      {
+        "provider": "github",
+        "releaseType": "release"
+      }
+    ],
     "dmg": {
-      "title": "${productName}"
+      "title": "Google Assistant"
     },
     "mac": {
-      "publish": [
-        "github"
-      ],
+      "artifactName": "${productName}.${ext}",
       "target": "dmg",
       "identity": null,
       "category": "public.app-category.utilities",
