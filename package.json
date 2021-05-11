@@ -28,7 +28,7 @@
     "electron-updater": "^4.2.5",
     "google-assistant": "^0.6.2",
     "jquery": "^3.5.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "node-record-lpcm16": "^1.0.1",
     "open": "^7.0.3",
     "q": "^1.5.1",
