@@ -15,7 +15,7 @@
   "author": "Maxime Allanic <maxime@allanic.me> (https://allanic.me)",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^8.2.3"
+    "electron": "^18.3.7"
   },
   "dependencies": {
     "animejs": "^3.2.0",
